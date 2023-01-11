@@ -1,19 +1,22 @@
-const a = 10
-const b = 10.5
-const c = 'Maria'
-const d = 'a'
-const e = false
-const f = {name: 'Maria', age: 25}
-const g = ['a', 15, false, 'maria']
-const h = null
-const i = undefined
+const x = 10;
 
-console.log(typeof a)
-console.log(typeof b)
-console.log(typeof c)
-console.log(typeof d)
-console.log(typeof e)
-console.log(typeof f)
-console.log(typeof g)
-console.log(typeof h)
-console.log(typeof i)
+if(x > 0){
+    var a = 100;
+    let b = 200;
+    const c = 300;
+    console.log("Imprimindo dentro do if: ");
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+// var - vaza escopo, ou seja, fica uma variável global
+console.log("Imprimindo fora do if: ");
+console.log(a);
+//console.log(b);
+//console.log(c);
+
+console.log("Imprimindo resultado do for: ");
+for (let i = 0; i < 5; i++){
+    console.log(i);
+}
